@@ -21,7 +21,7 @@ const Title = ({ resumeRef }) => {
 
   return (
     <>
-      <div className="my-3 mt-4 text-end mr-10">
+      <div className="my-3 mt-4 text-center lg:text-end lg:mr-10">
         <button
           onClick={handlePrint}
           className="px-4 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -52,8 +52,8 @@ const Title = ({ resumeRef }) => {
           })}
         </ul>
 
-        <div className="flex  w-full gap-4 ">
-          <div className="p-6 h-fit bg-gray-100 shadow-lg text-medium text-gray-500 rounded-lg w-[40%] ">
+        <div className="flex flex-col lg:flex-row w-full gap-4 ">
+          <div className="p-6 h-fit w-full bg-gray-100 shadow-lg text-medium text-gray-500 rounded-lg lg:w-[40%] ">
             {tab === "About" && <About />}
             {tab === "Education" && <Education />}
             {tab === "Skills" && <Skills />}

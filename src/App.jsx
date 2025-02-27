@@ -17,9 +17,11 @@ const App = () => {
         <Dashboard />
       ) : (
         <div className="w-full h-screen flex flex-col">
-          <nav className="flex bg-[#F7FAFC] px-11 py-5 items-center justify-between ">
-            <h1 className="font-bold text-4xl" id="heading">ResumeEase</h1>
-            <ul className="flex gap-7 text-lg items-center font-medium">
+          <nav className="flex bg-[#F7FAFC] px-7 lg:px-11 py-5 lg:items-center lg:justify-between ">
+            <h1 className="font-bold text-4xl" id="heading">
+              ResumeEase
+            </h1>
+            <ul className="hidden lg:flex lg:gap-7 lg:text-lg lg:items-center lg:font-medium">
               <li>
                 <a href="/">Home</a>
               </li>
@@ -35,8 +37,8 @@ const App = () => {
             </ul>
           </nav>
 
-          <div className="flex bg-blue-100 items-center px-7">
-            <div className="w-[50%] items-start flex flex-col gap-10">
+          <div className="flex h-full  bg-blue-100 items-center px-7">
+            <div className="w-[100%] lg:w-[50%] items-start flex flex-col gap-10">
               <h1 className="text-5xl font-bold text-[#1877F2]">
                 ResumeEase - Simple & <br /> Fast CV Maker
               </h1>
@@ -53,7 +55,7 @@ const App = () => {
                 Build Resume
               </button>
             </div>
-            <div className="w-[50%] h-[calc(100vh-84px)]">
+            <div className=" invisible lg:visible lg:w-[50%] lg:h-[calc(100vh-84px)]">
               <img className="w-full h-full" src={svg} alt="ResumeEase" />
             </div>
           </div>

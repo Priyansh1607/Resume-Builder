@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useResumeContext } from "../context/ResumeContext";
 
 const About = () => {
-  const {handleInputChange, formData} = useResumeContext();
+  const { handleInputChange, formData } = useResumeContext();
   console.log(formData);
   return (
     <>
@@ -15,13 +15,13 @@ const About = () => {
             Professional Summary
           </label>
           <textarea
-          value={formData.summary}
-          onChange={(e)=>handleInputChange("summary",e.target.value)}
-                placeholder="Brief Summary.."
-                id="summary"
-                rows={3}
-                className="w-full p-2 rounded-md bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-              />
+            value={formData.summary}
+            onChange={(e) => handleInputChange("summary", e.target.value)}
+            placeholder="Brief Summary.."
+            id="summary"
+            rows={3}
+            className="w-full p-2 rounded-md bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+          />
         </div>
 
         <div>
@@ -33,7 +33,7 @@ const About = () => {
           </label>
           <input
             value={formData.fullName}
-            onChange={(e)=>handleInputChange("fullName",e.target.value)}
+            onChange={(e) => handleInputChange("fullName", e.target.value)}
             type="text"
             id="full_name"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -50,7 +50,7 @@ const About = () => {
           </label>
           <input
             value={formData.role}
-            onChange={(e)=>handleInputChange("role",e.target.value)}
+            onChange={(e) => handleInputChange("role", e.target.value)}
             type="text"
             id="role"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -67,7 +67,7 @@ const About = () => {
           </label>
           <input
             value={formData.email}
-            onChange={(e)=>handleInputChange("email",e.target.value)}
+            onChange={(e) => handleInputChange("email", e.target.value)}
             type="email"
             id="email"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -84,7 +84,7 @@ const About = () => {
           </label>
           <input
             value={formData.phone}
-            onChange={(e)=>handleInputChange("phone",e.target.value)}
+            onChange={(e) => handleInputChange("phone", e.target.value)}
             type="tel"
             id="phone"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -102,8 +102,8 @@ const About = () => {
             City
           </label>
           <input
-          value={formData.address}
-          onChange={(e)=>handleInputChange("address",e.target.value)}
+            value={formData.address}
+            onChange={(e) => handleInputChange("address", e.target.value)}
             type="text"
             id="address"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -120,12 +120,12 @@ const About = () => {
             Linkedin
           </label>
           <input
-          value={formData.linkedin}
-          onChange={(e)=>handleInputChange("linkedin",e.target.value)}
+            value={formData.linkedin}
+            onChange={(e) => handleInputChange("linkedin", e.target.value)}
             type="url"
             id="website"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-            placeholder="xyz.com"
+            placeholder="https://linkedin.com"
             required
           />
         </div>

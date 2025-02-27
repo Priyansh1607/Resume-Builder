@@ -40,15 +40,19 @@ const Resume = forwardRef((props, ref) => {
                 size={25}
                 className="bg-[#F0F7FB] text-[#0077C0] rounded-full p-1.5"
               />{" "}
-              {formData.address || "United States, New York, NY"}
+              {formData.address || "United States, New York"}
             </div>
-            <div className="flex items-center gap-2 rounded-md py-1.5 px-2  bg-[#CCE4F2]">
+            <a
+              href={formData.linkedin}
+              target="_blank"
+              className="flex items-center gap-2 rounded-md py-1.5 px-2  bg-[#CCE4F2]"
+            >
               <FaLinkedin
                 size={25}
                 className="bg-[#F0F7FB] text-[#0077C0] rounded-full p-1.5"
               />{" "}
               Linkedin
-            </div>
+            </a>
           </div>
 
           {/* Professional Summary */}
@@ -89,7 +93,7 @@ const Resume = forwardRef((props, ref) => {
             <div>
               <h2 className="text-xl font-bold mt-6">EXPERIENCE</h2>
               {formData.workExperience.map((exp, _) => (
-                <div>
+                <div className=" mt-2">
                   <p className="font-bold">{exp.position || "MANAGER"}</p>
                   <p className="text-blue-500 capitalize">
                     {exp.company || "TCS"} - {exp.employmentType || "FullTime"}
@@ -119,7 +123,7 @@ const Resume = forwardRef((props, ref) => {
             <div className="mt-6">
               <h2 className="text-xl font-bold mt-6">EDUCATION</h2>
               {formData.education.map((edu, _) => (
-                <div>
+                <div className="mt-2">
                   <p className="font-bold">
                     {edu.degree || "B.TECH IN COMPUTER SCIENCE"}
                   </p>
