@@ -12,7 +12,8 @@ ReactJS Basic Resume Builder which will generate customized Resume in few minute
 - React + Vite
 - JavaScript
 - Tailwind CSS
-- Flowbite UI
+- lucide-react
+- framer-motion
 - Extras: React-To-Print Hook
  
 
